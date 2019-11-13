@@ -86,6 +86,7 @@ Car.prototype.fill = function(gallon) {
 }
 
 Car.prototype.drive = function(distance){
+  let driveMiles = Math.abs();
   this.odometer += distance;
   this.tank -= (distance/this.milesPerGallon);
 }
@@ -110,10 +111,10 @@ Baby.prototype.play = function(favoriteToy) {
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. Global - Considering everything in Javascript is an object, if this is not inside a declared object, it will refer to window object as its global parent.
+  2. Implicit - when this is used in a declared object, the value of this refers to the closest parent object.
+  3. Explicit - when there are multiple object references or nested objects using this may result in undefined values. to resolve this we use call,apply and bind methods to explicitly tell this refer to what context.
+  4. New - when new keyword is used, a new object is created. when a new keyword is used: the keyword this in the function will refer to the object created, an implicit return is added to the object it has created.
 */
 
 

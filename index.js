@@ -97,9 +97,11 @@ Car.prototype.drive = function(){
         + Should return a string "Playing with x", x being the favorite toy.
 */
 function Baby(name,age,favoriteToy) {
-  this.name = name;
-  this.age = age;
+  Person.call(this,name,age);
   this.favoriteToy = favoriteToy;
+}
+Baby.prototype.play = function(favoriteToy) {
+
 }
 
 /* 

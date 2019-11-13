@@ -99,9 +99,10 @@ Car.prototype.drive = function(){
 function Baby(name,age,favoriteToy) {
   Person.call(this,name,age);
   this.favoriteToy = favoriteToy;
+  //this.play = function(favoriteToy){};
 }
 Baby.prototype.play = function(favoriteToy) {
-
+  return `Playing with ${this.favoriteToy}`;
 }
 
 /* 
